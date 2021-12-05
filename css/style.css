@@ -1,15 +1,12 @@
-/* 
-I think I need to make a div container above the 
-sections and then apply the background color to
-that div, then apply the width (1400px) to the
-section classes themselves, and take it off of main.
+/*
+Need to reorganize this so they're in their corresponding sections!
 */
+
 body {
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
 
 .main {
@@ -17,7 +14,6 @@ body {
     flex-direction: column;
     height: 100vh;
     padding: 0;
-    width: 1000px;
 }
 
 a, .secondary-text, .footer {
@@ -42,22 +38,35 @@ a, .secondary-text, .footer {
     color: #1F2937;
 }
 
-.header, .intro, .footer {
+#first, #second, #sixth {
     background-color: #1F2937;
+}
+
+#first, 
+#second,
+#third,
+#fourth,
+#fifth,
+#sixth {
+    display: flex;
+    justify-content: center;
 }
 
 .header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-right: 100px;
-    padding-left: 100px;
+    max-width: 1000px;
+    margin-right: 30px;
+    margin-left: 30px;
+    flex: 1;
 }
 
 .intro {
     display: flex;
-    padding-right: 100px;
-    padding-left: 100px;
+    max-width: 1000px;
+    margin-right: 30px;
+    margin-left: 30px;
     padding-top: 30px;
     padding-bottom: 30px;
     gap: 30px;
@@ -75,8 +84,9 @@ a, .secondary-text, .footer {
 .random {
     display: flex;
     flex-direction: column;
-    padding-right: 100px;
-    padding-left: 100px;
+    margin-right: 30px;
+    margin-left: 30px;
+    max-width: 1000px;
     padding-top: 30px;
     padding-bottom: 30px;
 }
@@ -103,20 +113,25 @@ a, .secondary-text, .footer {
     border-radius: 15px;
 }
 
-.quote {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+#fourth {
     background-color: #e5e7eb;
-    padding-right: 100px;
-    padding-left: 100px;
+}
+
+.quote {
+    margin-right: 30px;
+    margin-left: 30px;
     padding-top: 30px;
     padding-bottom: 30px;
 }
 
 
 .container {
-    padding: 0 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1000px;
+    padding-left: 60px;
+    padding-right: 60px;
 }
 
 .text {
@@ -126,14 +141,15 @@ a, .secondary-text, .footer {
 
 .text-cred {
     display: flex;
-    flex-direction: row-reverse;
+    align-self: flex-end;
     font-weight: bold;
 }
 
 .signup {
     display: flex;
-    padding-right: 100px;
-    padding-left: 100px;
+    max-width: 1000px;
+    margin-right: 30px;
+    margin-left: 30px;
     padding-top: 30px;
     padding-bottom: 30px;
     justify-content: center;
@@ -143,11 +159,10 @@ a, .secondary-text, .footer {
     display: flex;
     padding: 30px 80px;
     background-color: #3882F6;
+    gap: 50px;
     flex: 1;
     border-radius: 4px;
 }
-
-
 
 ul {
     list-style-type: none;
@@ -175,6 +190,10 @@ a {
     display: flex;
     flex-direction: column;
     flex: 1;
+}
+
+.awesome { 
+    line-height: 1em;
 }
 
 .call {
@@ -222,6 +241,9 @@ button {
 }
 
 .footer {
+    max-width: 1000px;
+    margin-right: 30px;
+    margin-left: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
