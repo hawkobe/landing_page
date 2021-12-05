@@ -109,8 +109,10 @@ a, .secondary-text, .footer {
 .card img {
     width: 100px;
     height: 100px;
-    border: 2px solid #3882F6;
+    /* 
+    border: 2px solid #1F2937; 
     border-radius: 15px;
+    */
 }
 
 #fourth {
